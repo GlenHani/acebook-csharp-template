@@ -1,5 +1,5 @@
-﻿# TodoApi
-TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual Studio Code on macOS
+﻿# AcebookApi
+AcebookApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual Studio Code on macOS
 
 ### Set up
 
@@ -8,14 +8,15 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
     - If you're feeling brave, give the latest version a try (but don't spend more than 30 mins on it)
 2. Verify that you have insalled the SDK by executing `$ dotnet` in your terminal - you should see some output text
 3. Get [Visual Studio](https://visualstudio.microsoft.com/)
-4. Clone this repo with `$ git clone git@github.com:makersacademy/TodoApi.git`
-5. Open folder TodoApi in your Visual Studio editor, and double click on `TodoApi.csproj`
+4. Clone this repo with `$ git clone git@github.com:makersacademy/acebook-csharp-template.git`
+5. Open folder AcebookApi in your Visual Studio editor, and double click on `AcebookApi.csproj`
 6. Install postgres (if you haven't got it already) with `$ brew install postgresql`
 7. Then start postgres with `$ brew services start postgresql`
-8. Create your DB with `createdb TodoList`
-9. Run the sql migration scripts with `$ dotnet ef database update`    
+8. Create your DB with `createdb Acebook`
+9. Run the sql migration scripts with `$ dotnet ef database update`
+    - If this command fails, you may be using the wrong version of dotnet core
 10. Run your server with `$ dotnet watch run`
-11. Verify that your server is running by hitting https://localhost:5001/api/todo) - you should see some JSON
+11. Verify that your server is running by hitting https://localhost:5001/api/post) - you should see some JSON
     
 ### Skills Checklist
 
@@ -29,15 +30,9 @@ TodoApi is a web service created in .NET Core 2.1, PostgreSQL 10 &amp; Visual St
 #### Resources
 
 ##### Videos + Github examples
-In the `makers-video` please look at:
+[These videos](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code) demonstrate specific aspects of C# development.  The codebase used in the videos is [here](https://github.com/makersacademy/TodoApi).
 
 - navigating-a-csharp.mov
 - add-template-csharp.mov (branch add-template-to-view)
 - creating-new-todo-items.mov (branch add-items-to-db)
 - adding-a-migration.mov (branch add-fields-to-model)
-
-https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code
-
-### Pivoting to Acebook
-
-Ask your coach about this, once you have can tick off everything in the Skills Checklist.
